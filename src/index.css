@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-slate-950 text-slate-200 font-sans antialiased;
+  }
+  h1, h2, h3, .font-display {
+    font-family: "Sora", "Inter", sans-serif;
+  }
+  /* Décalage pour les ancres sous la navbar fixe */
+  section[id] {
+    scroll-margin-top: 90px;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-teal-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent;
+  }
+  .card-glass {
+    @apply bg-slate-900/60 border border-slate-800 backdrop-blur-sm;
+  }
+}
+
+/* Barre de défilement discrète */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #14b8a6;
+}
+
+/* Halo animé en fond du hero */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+}
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}

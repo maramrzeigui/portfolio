@@ -1,0 +1,42 @@
+// Import React hooks and components
+import { useMemo, useRef } from "react";
+import { useGLTF } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
+import type { Mesh } from "three";
+
+// Import the 3D model file for the sky
+import skyScene from "../assets/3d/sky.glb";
+
+type SkyProps = {
+  isRotating: boolean;
+};
+
+// Sky component definition
+const Sky = ({ isRotating }: SkyProps) => {
+  // Load the 3D model using useGLTF hook
+  const { scene } = useGLTF(skyScene);
+  const clonedScene = useMemo(() => scene.clone(true), [scene]);
+
+  // Create a reference for the sky mesh
+  const skyRef = useRef<Mesh>(null);
+
+  // Use useFrame hook for animation logic
+  useFrame((_, delta) => {
+    if (!skyRef.current) return;
+
+    // Rotate the sky if isRotating is true
+    if (isRotating) {
+      skyRef.current.rotation.y += 0.25 * delta;
+    }
+  });
+
+  // Return the JSX for the Sky component with mesh and primitive
+  return (
+    <mesh ref={skyRef} dispose={null}>
+      <primitive object={clonedScene} />
+    </mesh>
+  );
+};
+
+// Export the Sky component as the default export
+export default Sky;

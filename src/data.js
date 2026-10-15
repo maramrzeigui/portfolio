@@ -1,0 +1,90 @@
+export const player = {
+  name: 'Maram Rzeigui',
+  handle: 'MARAM.EXE',
+  role: "Élève-Ingénieure en Informatique",
+  focus: 'Systèmes d\'Information Mobile & IA',
+  email: 'maram.rzeigui@esprit.tn',
+  phone: '+216 52 300 663',
+  location: 'Tunisie',
+  github: 'https://github.com/maramrzeigui',
+  linkedin: 'https://www.linkedin.com/in/maram-rzeigui/',
+  quest: 'Recherche un stage PFE de 6 mois',
+  bio: "Je livre des produits complets en autonomie, du cahier des charges au déploiement en production : pipelines temps réel de détection de fraude, applications mobiles offline-first, intégrations IA et blockchain, dont une solution 100 % hors-ligne en zone sans réseau.",
+}
+
+export const stats = [
+  { v: 12, suffix: '', k: 'projets livrés', ctx: 'IA, mobile, web, DevOps', logos: ['medaichain.png', 'volteo.png', 'guesto.png'] },
+  { v: 20, suffix: '', k: 'commandes par jour', ctx: 'en production chez Speranza Pizza', logos: ['speranza-fav.png'] },
+  { v: 93.5, suffix: ' %', k: 'de précision IA', ctx: 'prédiction médicale, MedAIChain', logos: ['medaichain.png'] },
+  { v: 100, suffix: ' %', k: 'hors-ligne', ctx: 'EcoGuide, en montagne sans réseau', logos: ['ecoguide.png'] },
+]
+
+export const skillTree = [
+  { branch: 'IA & Data', icon: '🧠', grad: 'pink', color: '#ff4fd8', level: 88, items: ['Python', 'XGBoost', 'Kafka / Redpanda', 'Streaming ML', 'Feature Engineering', 'LLM fine-tuning (LoRA)', 'Hugging Face'] },
+  { branch: 'Mobile', icon: '📱', grad: 'blue', color: '#7c5cff', level: 92, items: ['Flutter / Dart', 'Kotlin', 'Swift', 'React Native', 'FlutterFlow', 'SQLite offline-first'] },
+  { branch: 'Backend', icon: '🛠️', grad: 'green', color: '#00e5ff', level: 85, items: ['Spring Boot', 'ASP.NET Core', 'NestJS', 'Laravel', 'REST / SignalR', 'PostGIS'] },
+  { branch: 'Frontend', icon: '🎨', grad: 'orange', color: '#38ffa5', level: 87, items: ['React', 'Next.js', 'TypeScript', 'Blazor', 'Framer Motion', 'HTML / CSS'] },
+  { branch: 'Cloud & DevOps', icon: '☁️', grad: 'yellow', color: '#ffc94f', level: 78, items: ['Docker', 'Jenkins CI/CD', 'SonarQube', 'Prometheus', 'AWS', 'Vercel', 'Firebase / Supabase'] },
+  { branch: 'Web3 & Paiements', icon: '⛓️', grad: 'red', color: '#ff7a45', level: 74, items: ['Polygon ERC-721', 'AES-256-GCM', 'Stripe', 'Flouci / e-DINAR', 'Paiements crypto'] },
+]
+
+export const quests = [
+  { title: 'Junior AI Engineer', org: 'Smartovate', date: '09/2026, en cours', place: 'Londres · à distance', tag: 'BOSS FIGHT', xp: 900,
+    points: ['Architecture d\'un pipeline streaming temps réel (ingestion → validation → scoring → restitution) avec Kafka/Redpanda.', 'Modèle XGBoost de scoring de fraude avec features comportementales.', 'Idempotence & contrôles qualité : aucun doublon au rejeu sur données bancaires.', 'Observabilité : logs, métriques et dashboard temps réel.'] },
+  { title: 'Développeuse Full-Stack', org: 'Rz Prod × PNUD · GEF/SGP', date: '05/2026, 07/2026', place: 'Tunisie', tag: 'MAIN QUEST', xp: 800,
+    points: ['Architecture offline-first en montagne sans réseau : cartes GeoJSON, GPS, alertes de sortie de sentier, SOS 100 % hors-ligne.', 'EcoTracer : enregistrement GPS temps réel des sentiers, validé en 2 campagnes terrain.', 'EcoBot : chatbot IA bilingue FR/AR avec quiz éducatifs.', 'App Flutter + back-office Flutter Web + API NestJS/PostGIS livrés en 3 mois à 2.'] },
+  { title: 'Développeuse Freelance', org: 'Speranza Pizza', date: '09/2025, 10/2025', place: 'France · à distance', tag: 'SIDE QUEST', xp: 500,
+    points: ['Site de commande en ligne en production (Firebase, Vercel, Stripe), jusqu\'à 20 commandes/jour.', 'Application mobile Dashboard Admin pour le suivi temps réel des commandes.'] },
+  { title: 'Stagiaire .NET / Blazor', org: 'Linedata', date: '07/2025, 08/2025', place: 'Tunisie', tag: 'TRAINING ARC', xp: 400,
+    points: ['2 applications Blazor synchronisées en temps réel via SignalR Hubs.', 'Architecture Message-Driven UI et intégration de fonctionnalités IA en C#/.NET.'] },
+]
+
+export const worlds = [
+  { id: 'medaichain', logo: '/real/logos/medaichain.png', icon: '🩺', name: 'MedAIChain', sub: 'Plateforme e-Santé décentralisée', color: '#ff4fd8', diff: 5,
+    desc: 'LLM médical Llama 3.2 3B fine-tuné (LoRA/QLoRA) exécuté 100 % en local, OCR de 20 biomarqueurs, 6 modèles ML à 93,5 %, ordonnances en NFT ERC-721 sur Polygon.',
+    tags: ['Flutter', 'Llama 3.2', 'OCR', 'Polygon', 'AES-256'], url: 'https://github.com/maramrzeigui/medaichain' },
+  { id: 'volteo', logo: '/real/logos/volteo.png', icon: '⚡', name: 'Volteo', sub: 'SaaS de recharge VE en Tunisie', color: '#00e5ff', diff: 5,
+    desc: 'Réalisé avec Tac-Tic : app mobile React Native, back-office React, API Laravel, bornes OCPP 1.6J, wallet Flouci / e-DINAR et IA locale.', partner: { src: '/real/logos/tactic.png', name: 'Tac-Tic' },
+    tags: ['React Native', 'Laravel', 'OCPP 1.6J', 'TypeScript'], url: 'https://github.com/maramrzeigui/volteo' },
+  { id: 'ecoguide', logo: '/real/logos/ecoguide.png', icon: '🌿', name: 'EcoGuide', sub: 'Écotourisme · Jebel Chitana et Cap Negro', color: '#38ffa5', diff: 4,
+    desc: 'Randonnée offline-first en zone sans réseau : GPS, SOS, EcoTracer et chatbot EcoBot bilingue. Partenariat PNUD / GEF-SGP.',
+    tags: ['Flutter', 'NestJS', 'PostGIS', 'SQLite'], url: 'https://www.smsa-ecoguide.com/' },
+  { id: 'fraud', logo: '/real/logos/smartovate.png', icon: '', name: 'Fraud Detection', sub: 'Smartovate · Londres', color: '#e81cff', diff: 5,
+    desc: 'Pipeline temps réel Kafka / Redpanda et modèle XGBoost qui score chaque transaction bancaire, sans doublon.',
+    tags: ['Python', 'Kafka', 'XGBoost', 'AWS'], url: 'https://github.com/maramrzeigui' },
+  { id: 'speranza', logo: '/real/logos/speranza-fav.png', icon: '', name: 'Speranza Pizza', sub: 'Commande en ligne · France', color: '#ff7a45', diff: 4,
+    desc: 'Site de commande en ligne en production avec paiement Stripe et dashboard temps réel : jusqu\'à 20 commandes par jour.',
+    tags: ['Firebase', 'Stripe', 'Vercel', 'React'], url: 'https://www.speranza-pizza.fr/' },
+  { id: 'linedata', logo: '/real/logos/linedata.svg', icon: '', name: 'Blazor temps réel', sub: 'Stage · Linedata', color: '#2b77e7', diff: 3,
+    desc: 'Deux applications Blazor synchronisées en temps réel via SignalR, avec fonctionnalités IA en C# / .NET.',
+    tags: ['C#', '.NET', 'Blazor', 'SignalR'], url: 'https://www.linedata.com/' },
+  { id: 'mentoraball', logo: '/real/logos/mentora.png', icon: '🎓', name: 'MentoraBall', sub: 'Plateforme éducative gamifiée', color: '#7c5cff', diff: 4,
+    desc: 'Google Gemini intégré aux cours, navigation mains libres par commandes vocales, bascule vers l\'authentification faciale après 3 échecs.',
+    tags: ['Gemini', 'Voice UI', 'OAuth2', 'JWT'], url: 'https://github.com/ProjectWeb-java/Mentora' },
+  { id: 'viaitalia', icon: '🇮🇹', name: 'ViaItalia', sub: 'Vers les universités italiennes', color: '#ffc94f', diff: 3,
+    desc: 'Plateforme d\'accompagnement des étudiants : React, Express, Prisma, MySQL et authentification JWT.',
+    tags: ['React', 'Express', 'Prisma', 'MySQL'], url: 'https://github.com/maramrzeigui/viaitalia' },
+  { id: 'devops', icon: '⚙️', name: 'Student DevOps', sub: 'Chaîne CI/CD complète', color: '#ff7a45', diff: 3,
+    desc: 'Spring Boot industrialisé : pipeline Jenkins, analyse SonarQube, conteneurs Docker et monitoring Prometheus.',
+    tags: ['Spring Boot', 'Jenkins', 'Docker', 'Prometheus'], url: 'https://github.com/maramrzeigui/student-management-devops' },
+  { id: 'magstudio', logo: '/real/logos/magstudio.png', icon: '🎹', name: 'Mag Studio', sub: 'Studio de musique iOS & Android', color: '#8b5cf6', diff: 5,
+    desc: 'Apps natives SwiftUI et Kotlin/Compose sur une API NestJS : instruments virtuels, enregistrement avec effets, paroles et voix générées par IA.',
+    tags: ['Swift', 'Kotlin', 'NestJS', 'Gemini'], url: 'https://github.com/azizgargouri/Mag-Studio-Ios' },
+  { id: 'discoverway', logo: '/real/logos/discoverway.png', icon: '✈️', name: 'DiscoverWay', sub: 'Site web d\'agence de voyage', color: '#0891b2', diff: 3,
+    desc: 'PHP MVC : voyages, réservations, recherche et billets PDF (FPDF), avec blog, boutique et réclamations.',
+    tags: ['PHP', 'MySQL', 'MVC', 'FPDF'], url: 'https://github.com/Yassine-Ayache/ProjetWeb2A36/tree/gestion-voyage' },
+  { id: 'guesto', logo: '/real/logos/guesto.png', icon: '🍽️', name: 'Guesto', sub: 'Menu QR & app serveur', color: '#4fa3ff', diff: 2,
+    desc: 'Plateforme de digitalisation des restaurants : app client et backoffice Next.js + Supabase, app serveur Flutter, notifications OneSignal, site vitrine.',
+    tags: ['HTML', 'CSS', 'JS'], url: 'https://www.guesto-service.com/' },
+  { id: 'rzprod', logo: '/real/logos/rzprod.png', icon: '🎬', name: 'RZ Prod', sub: 'Agence de marketing digital', color: '#ff5c7a', diff: 2,
+    desc: 'Site vitrine de l\'agence RZ Prod : animations, présentation des services et des réalisations.',
+    tags: ['JavaScript', 'Animations'], url: 'https://github.com/maramrzeigui/site-RZ' },
+]
+
+export const achievements = [
+  { img: '/real/logos/esprit.svg', title: 'Ingénieure en devenir', text: 'Diplôme d\'Ingénieur en Informatique, ESPRIT, 2022 à 2027' },
+  { img: '/real/flags/gb.svg', title: 'English B2', text: 'Certifiée EF SET' },
+  { img: '/real/flags/fr.svg', title: 'Français B2', text: 'Courant à l\'écrit et à l\'oral' },
+  { img: '/real/flags/tn.svg', title: 'Arabe', text: 'Langue maternelle' },
+  { img: '/real/flags/de.svg', title: 'Deutsch A2', text: 'En progression' },
+]
